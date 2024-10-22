@@ -1,0 +1,1030 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+@font-face { font-family: CHEESEBURGA; src: url('font/cheeseburga/CHEESEBURGAdemo.ttf'); } 
+
+.history-section {
+    position: relative;
+    padding-top: 1rem;
+    overflow: hidden;
+    height: 805px;
+}
+
+.history-section::before, .project-vision-bg::before, .tokenomics-bg::before, .merchandise-bg::before {
+    position: absolute;
+    z-index: -1;
+    transform: rotate(8deg);
+    background: radial-gradient(42.38% 44.19% at 50.14% 67.33%, #FFF280 0%, #FFC700 100%);
+    content: "";
+    width: 220vw;
+    height: 770px;
+    top: -18.4%;
+    left: -69.5%;
+    border-radius: 40px;
+}
+
+.history-bar {
+    width: 140px;
+    height: 17px;
+    content: "";
+    background-color: #fff6a1;
+    margin: auto;
+    border-radius: 2rem;
+}
+
+.history {
+    display: flex;
+    height: 100vh;
+}
+
+.history-image {
+    width: 700px;
+    height: 700px;
+    margin-top: 4rem;
+    -webkit-box-reflect: below -199px linear-gradient(to bottom,transparent 66%,#353535 100%);
+}
+
+.history-details {
+    text-align: right;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    line-height: 104.78px;
+}
+
+.history-details h2 {
+    color: #f87a01;
+    font-size: 82px;
+    font-weight: 800;
+}
+
+.history-details h1 {
+    font-family: cheeseburga;
+    color: #fff;
+    font-size: 125.05px;
+    font-weight: 900;
+    line-height: 150px;
+}
+
+.history-details p {
+    color: #353535;
+    font-family: Kumbh Sans;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.galary-section {
+    position: relative;
+}
+
+.galary-options{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+padding: 0px;
+gap: 43px;
+color: #353535;
+position: absolute;
+top: -64px;
+left: 36%;
+}
+
+.galary-options h3 {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 104.73%;
+    font-style: normal;
+    font-family: 'Montserrat';
+}
+
+.galary-second-option{
+    color: #FFA800;
+}
+
+.galary-slider {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    top: -2px;
+}
+.galary-display {
+    display: grid;
+    gap: 2rem;
+    margin: 1px 88px 40px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.galary-item {
+    width: 325px;
+    height: 210px;
+    object-fit: cover;
+    background: #a6a6a6;
+    border-radius: 8px;
+}
+
+.galary-item img {
+    width: 10vw;
+}
+
+.galary-display::-webkit-scrollbar {
+    display: none;
+}
+
+.prev,.next {
+    position: absolute;
+    width: 55px;
+    height: 75px;
+    top: 70px;
+    background: #353535;
+    border: none;
+    color: white;
+    border-radius: 14px;
+}
+
+.prev {
+    left: 0px;
+}
+
+.next {
+    right: 0px;
+}
+
+.project-vision-section{
+    position: relative;
+    margin-top: 8rem;
+    overflow: hidden;
+}
+
+.project-vision-section::before, .tokenomics-section::before, .merchandise-section::before  {
+    position: absolute;
+    z-index: 0;
+    transform: rotate(-8deg);
+    background: white;
+    content: "";
+    width: 175%;
+    height: 372px;
+    top: 10.4%;
+    left: -69.5%;
+    border-radius: 40px;
+}
+
+.project-vision-bg::before {
+    width: 120%;
+    height: 1360px;
+    top: 16%;
+    left: -4.5%;
+}
+
+.project-vision h1 {
+    font-family: CHEESEBURGA;
+    font-size: 165px;
+    font-weight: 400;
+    line-height: 230.41px;
+    text-align: center;
+    color:#FFA800;
+    z-index: 0;
+    position: relative;
+}
+
+.project-vision img {
+    width: 100%;
+    -webkit-box-reflect: below -95px linear-gradient(to bottom,transparent 68%,rgba(0,0,0,0.4) 81%);}
+
+.project-vision p {
+    font-family: Kumbh Sans;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: center;
+    color: #353535;
+    margin: 86px 83px;
+}
+
+.road-map-section h2 {
+    font-family: CHEESEBURGA;
+    font-size: 165px;
+    font-weight: 400;
+    line-height: 300.08px;
+    text-align: left;
+    margin-left: 4.2rem;
+    color: white;
+}
+
+.road-map-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.road-map-content-image {
+    margin-right: 2rem;
+    top: -135px;
+    position: relative;
+}
+
+.road-map-content-image img {
+    width: 660px;
+    -webkit-box-reflect: below -60px linear-gradient(to bottom,transparent 68%,rgba(0,0,0,0.4) 81%);}
+
+
+.road-map-content-title {
+    font-family: Kumbh Sans;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 34px;
+    text-align: left;
+    width: 520px;
+    height: 470px;
+    margin-top: 6.5rem;
+    margin-left: 4rem;
+    color: #353535;
+}
+
+.road-map-content-title h5 {
+    color: #FFA800;
+    font-size: 34px;
+    margin-top: 2rem;
+}
+
+.plans {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: center;
+        gap: 10px;
+}
+
+.plan {
+    width: 260px;
+    height: 430px;
+    text-align: center;
+}
+
+.plan img {
+    width: 90%;
+    height: 74%;
+}
+
+.plan1-bg {
+    background: #dcc70e;
+    border-radius: 30px 0;
+}
+.plan2-bg {
+    background: #0cd7d7;
+}
+.plan3-bg {
+    background: #d52dff;
+}
+.plan4-bg {
+    background: #954446;
+    border-radius: 0 30px;
+
+}
+
+.plan-layer {
+    content: "";
+    height: 68%;
+    width: 100%;
+    position: relative;
+    display: block;
+    bottom: 295px;
+background: linear-gradient(transparent 10%,white 98%);
+}
+
+.plan-text {
+    color: white;
+    text-align: center;
+    margin-top: 0.7rem;
+    display: block;
+    height: 100px;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 0 2rem;
+}
+
+.plan-text h5 {
+    font-size: 28px;
+}
+
+.tokenomics-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.tokenomics-section::before {
+    z-index: -1;
+    height: 224px;
+    top: -4%;
+}
+
+.tokenomics-bg::before {
+    z-index: -2;
+    width: 120%;
+    height: 1265px;
+    top: -5%;
+    left: -4.5%;
+}
+
+.tokenomics-title {
+    font-family: CHEESEBURGA;
+font-size: 155px;
+font-weight: 400;
+line-height: 300.08px;
+text-align: left;
+position: relative;
+    top: 180px;
+    left: 45px;
+    color: white;
+}
+
+.tokenomics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    height: 62rem;
+}
+
+.tokenomics-texts {
+    display: grid;
+    gap: 3rem;
+}
+
+.tokenomics-text {
+    background: #353535;
+    width: 355px;
+    height: 90px;
+    display: block;
+    border-radius: 1rem;
+    padding: 1rem 0 0 3rem;
+    box-shadow: 8px 8px 15px 7px #b47104;}
+
+.tokenomics-text h1 {
+    font-size: 30px;
+    color: #fff280;
+    font-weight: 800;
+}
+
+.tokenomics-text h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.tokenomics img {
+    width: 50%;
+    -webkit-box-reflect: below -152px linear-gradient(to bottom,transparent 68%,rgba(0,0,0,0.4) 81%);
+}
+
+.merchandise-section h1 {
+    font-family: CHEESEBURGA;
+font-size: 110px;
+font-weight: 400;
+line-height: 270px;
+text-align: center;
+color: #FFA800;
+}
+
+.merchandise-slider {
+    position: relative;
+    max-width: 66%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.merchandise-slides {
+    display: flex;
+    height: 530px;
+}
+
+.merchandise-slide {
+    min-width: 100%;
+}
+
+.merchandise-slide img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 44%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.merchandise-section {
+    position: relative;
+    padding-top: 1rem;
+    overflow: hidden;
+    height: 100%;
+}
+
+.merchandise-bg::before {
+    z-index: -2;
+    width: 175%;
+    height: 1180px;
+    top: 24%;
+    left: -65.5%;
+}
+
+.merchandise-section::before  {
+    z-index: -1;
+    width: 175%;
+    height: 376px;
+    top: 20%;
+}
+
+.games-head {
+    display: block;
+    text-align: center;
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+}
+
+.games-head h1 {
+    font-family: CHEESEBURGA;
+font-size: 120px;
+font-weight: 400;
+color: white;
+line-height: 130px;
+}
+.games-head h4 {
+font-family: Montserrat;
+font-size: 40px;
+font-weight: 900;
+color: #353535;
+}
+
+.game-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    border: 8px solid white;
+}
+
+.games-slider {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.games-slides {
+    display: flex;
+}
+
+.game-slide {
+    min-width: 100%;
+}
+
+.preview-title {
+    font-family: Montserrat;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 78.02px;
+    text-align: left;
+    color: #353535;
+    margin: 4rem 0 0 9rem;
+}
+
+.preview-title b {
+    color: #ffa800;
+}
+
+.previews-slider {
+    position: relative;
+    margin: auto;
+    width: 78%;
+}
+
+.previews-slides {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.preview-slide img {
+    width: 300px;
+}
+
+.social-media-title {
+    font-family: CHEESEBURGA;
+    color: #ffa800;
+    font-size: 110px;
+    margin-left: 9rem;
+    width: 70%;
+    margin-top: 15rem;
+}
+
+.social-media-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.social-media-links {
+    display: block;
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(124deg, #80b3ff, #417df2);
+    border: 8px solid #2269d8;
+    border-radius: 2rem;
+    color: white;
+}
+
+.social-media-image {
+    width: 45%;
+    -webkit-box-reflect: below -152px linear-gradient(to bottom,transparent 68%,rgba(0,0,0,0.4) 81%);
+}
+
+.media-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.media-icon {
+    background: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 35px;
+    padding: 6px;
+}
+
+.media-icon img {
+    width: 30px;
+    height: 30px;
+    padding: 3px 5px;
+}
+
+.media-link h1 {
+    font-size: 24px;
+}
+
+@media(max-width:1200px) {
+    .history-details h2 {
+        font-size: 65px;
+    }
+    .history-image {
+        width: 550px;
+        height: 635px;
+    }
+    .project-vision h1 {
+        font-size: 120px;
+    }
+    .road-map-section h2 {
+        font-size: 130px;
+    }
+    .road-map-content-image img {
+        width: 500px;
+    }
+    .road-map-content-title {
+        font-size: 30px;
+    }
+    .road-map-content-title h5 {
+        font-size: 30px;
+    }
+    .plans {
+        gap: 10px;
+        margin: 0 3rem;
+    }
+    .plan {
+        width: 230px;
+        height: 390px;
+    }
+    .plan-text {
+        padding: 0 1rem;
+    }
+    .plan-text h5 {
+        font-size: 24px;
+    }
+    .plan-text p {
+        font-size: 20px;
+    }
+    .plan img {
+            width: 88%;
+            height: 70%;
+    }
+    .plan-layer {
+        height: 76%;
+    }
+    .tokenomics-bg::before {
+        height: 1180px;
+    }
+    .tokenomics-title {
+        font-size: 100px;
+        line-height: 210px;
+    }
+    .tokenomics {
+        gap: 3rem;
+    }
+    .merchandise-section h1 {
+        font-size: 85px;    
+        line-height: 220px;
+    }
+    .games-head h1 {
+        font-size: 100px;
+        line-height: 110px;
+    }
+    .games-head h4 {
+        font-size: 30px;
+    }
+    .game-image {
+        width: 813px;
+        height: 510px;
+    }
+    .preview-title {
+        font-size: 30px;
+        margin: 4rem 0 0 7rem;
+    }
+    .previews-slides {
+        gap: 1rem;
+    }
+    .preview-slide img {
+        width: 280px;
+    }
+}
+
+@media(max-width:1000px){
+    .history-image {
+        width: 500px;
+        height: 560px;
+    }
+    .history-details h1 {
+        font-size: 90.05px;
+        line-height: 120px;
+    }
+    .history-details h2 {
+        font-size: 60px;
+    }
+    .history-details p {
+        font-size: 23px;
+    }
+    .galary-display {
+        gap: 1rem;
+        margin: 1px 45px 40px;
+    }
+    .galary-slider {
+        width: 95%;
+    }
+    .galary-item {
+        width: 300px;
+        height: 200px;
+    }
+    .project-vision h1 {
+        font-size: 100px;
+    }
+    .road-map-content-title {
+        font-size: 22px;
+    }
+    .road-map-content-title h5 {
+        font-size: 23px;
+    }
+    .road-map-content-title h5 {
+        font-size: 23px;
+    }
+    
+    .preview-slide img {
+        width: 245px;
+    }
+    .social-media-title {
+        font-size: 80px;
+    }
+    .game-image {
+        width: 774px;
+        height: 500px;
+    }
+    .project-vision p {
+        font-size: 25px;
+    }
+}
+@media(max-width:900px) {
+    .history-image {
+        width: 430px;
+        height: 470px;
+    }
+    .history-section::before{
+        height: 660px;
+    }
+    .history-details h1 {
+        font-size: 88.05px;
+        line-height: 118px;
+    }
+    .road-map-section h2 {
+        font-size: 100px;
+    }
+    .road-map-content-image img {
+        width: 410px;
+    }
+    .plans {
+        grid-template-columns: repeat(2,1fr);
+        gap: 41px;
+    }
+    .tokenomics-bg::before {
+        height: 1080px;
+    }
+    .tokenomics {
+        gap: 1rem;
+    }
+    .tokenomics-text {
+        width: 300px;
+    }
+    .tokenomics img {
+        -webkit-box-reflect: below -90px linear-gradient(to bottom,transparent 68%,rgba(0,0,0,0.4) 81%);
+    }
+    .merchandise-section h1 {
+        font-size: 60px;
+        line-height: 200px;
+    }
+    .merchandise-slider {
+        max-width: 80%;
+    }
+    .merchandise-slide img {
+    height: 90%;
+    }
+    .merchandise-section::before {
+    top: 14%;
+    }
+    .game-image {
+        width: 632px;
+        height: 430px;
+    }
+    .merchandise-bg::before {
+        width: 184%;
+    }
+    .preview-slide img {
+        width: 200px;
+    }
+    .social-media-links {
+        width: 260px;
+        height: 160px;
+    }
+    .media-link h1 {
+        font-size: 20px;
+    }
+    .media-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .media-icon img {
+        width: 20px;
+        height: 20px;
+    }
+    .social-media-image {
+        -webkit-box-reflect: below -110px linear-gradient(to bottom,transparent 68%,rgba(0,0,0,0.4) 81%);
+    }
+}
+
+@media(max-width:700px) {
+    .history-section::before {
+        height: 535px;
+    }
+    .history-section {
+        height: 100vh;
+    }
+    .history-image {
+        width: 360px;
+        height: 400px;
+    }
+    .history-details {
+        padding-right: 1rem;
+        line-height: 50.78px;
+    }
+    .history-details h2 {
+        font-size: 40px;
+    }
+    .history-details h1 {
+        font-size: 60.05px;
+        line-height: 90px;
+    }
+    .history-details p {
+        font-size: 18px;
+    }
+    .project-vision-section {
+        margin-top: 5rem;
+    }
+    .project-vision h1 {
+        font-size: 70px;
+    }
+    .project-vision-section::before {
+        top: 3.4%;
+    }
+    .project-vision p {
+        font-size: 16px;
+    }
+    .project-vision p {
+        margin: 70px 80px;
+    }
+    .road-map-section h2 {
+        font-size: 80px;
+        line-height: 130.08px;
+    }
+    .road-map-content-image img {
+        width: 340px;
+    }
+    .road-map-content-title {
+        font-size: 14px;
+    }
+    .road-map-content-title h5 {
+        font-size: 15px;
+    }
+    .project-vision-bg::before {
+        top: -11%;
+        left: -0.5%;
+    }
+    .tokenomics-bg::before {
+        height: 1080px;
+        left: -37px;
+        width: 130%;
+    }
+    .tokenomics-title {
+        font-size: 80px;
+        line-height: 160px;
+    }
+    .tokenomics {
+        gap: 0rem;
+    }
+    .tokenomics-text {
+        width: 250px;
+    }
+    .merchandise-section h1 {
+        font-size: 60px;
+        line-height: 65px;
+    }
+    .game-image {
+        width: 97%;
+        height: 100%;
+    }
+    .merchandise-section::before {
+        top: 2%;
+    }
+    .merchandise-bg::before {
+        top: 10%;
+        height: 1050px;
+    }
+    .merchandise-slide img {
+        height: 70%;
+    }
+    .preview-title {
+        font-size: 28px;
+        margin: 4rem 0 0 5rem;
+    }
+    .preview-slide img {
+        width: 170px;
+    }
+    .social-media-title {
+        font-size: 70px;
+        margin-left: 5rem;
+    }
+    .social-media-links {
+        width: 230px;
+        height: 140px;
+    }
+    .media-link {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    .social-media-title {
+        margin-top: 6rem;
+    }
+}
+
+@media(max-width:400px) {
+    .history-section {
+        height: 70vh;
+    }
+    .history-image {
+        width: 200px;
+        height: 207px;
+    }
+    .history-details h2 {
+        font-size: 26px;
+    }
+    .history-details h1 {
+        font-size: 38.05px;
+        line-height: 40px;
+    }
+    .history-details p {
+        font-size: 10px;
+    }
+    .galary-options {
+        gap: 10px;
+        left: 20%;
+    }
+    .project-vision-section::before {
+        top: -14.6%;
+        left: -130px;
+    }
+    .project-vision-bg::before {
+        top: 5%;
+        left: -25.5%;
+        height: 1040px;
+        width: 160%;
+    }
+    
+    .project-vision h1 {
+        font-size: 39px;
+        line-height: 61.41px;
+    }
+    .project-vision p {
+        margin: 15px 30px;
+    }
+    .road-map-section h2 {
+        font-size: 45px;
+        line-height: 100.08px;
+        margin-left: 2.2rem;
+    }
+    .road-map-content-image img {
+        width: 260px;
+    }
+    .road-map-content {
+        display: block;
+    }
+    .road-map-content-title {
+        font-size: 16px;
+        margin-top: 0;
+        margin-left: 35px;
+        line-height: 30px;
+        width: auto;
+        height: 300px;
+    }
+    .road-map-content-title h5 {
+        font-size: 21px;
+        margin: 0;
+    }
+    .plans {
+        grid-template-columns: repeat(1,1fr);
+        gap: 41px;
+    }
+    .tokenomics-title {
+        font-size: 50px;
+        line-height: 110px;
+    }
+    .tokenomics {
+        display: grid;
+        height: 48rem;
+        margin-top: 11rem;
+    }
+    .tokenomics-texts {
+        justify-content: center;
+    }
+
+    .tokenomics img {
+        width: 70%;
+    }
+    .merchandise-section h1 {
+        font-size: 45px;
+        line-height: 80px;
+    }
+
+    .social-media-title {
+        margin-top: 6rem;
+        font-size: 50px;
+        margin-left: 3rem;
+    }
+    .social-media-content {
+        display: grid;
+        margin-left: 5rem;
+        margin-top: 2rem;
+    }
+    .social-media-image {
+        width: 80%;
+    }
+.prev, .next {
+    top: 30%;
+}
+}
